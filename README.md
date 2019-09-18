@@ -22,3 +22,4 @@ Now, navigate to `server.js` file on your terminal, and run the following comman
 ```
 nodemon server.js
 ```
+After start your server go on the browser and write `localhost:3031/ocr_data` and see informations.
