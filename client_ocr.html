@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="client_ocr.css">
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<title>Mithyalab.com</title>
+
+</head>
+<body>
+	<center><div class="main_div">
+		<div class="upload_card">
+			<label>
+                    <input type="file" onchange="readURL(this);"/><i class="fa fa-upload" aria-hidden="true"></i>
+                    Upload Card
+                </label>
+	    	
+		</div>
+		<div>
+	    <div class="image_div"><img width="350px" height="70px" id="blah" />
+	    <div class="input_div">
+	    	<form action="/ocr.js">
+			  <input type="text" name="fname" placeholder="Name"><br>
+			  <input type="text" name="lname" placeholder="Company name"><br>
+			  <input type="text" name="lname" placeholder="Phone(s)"><br>
+			  <input type="text" name="lname" placeholder="Email(s)"><br>
+			  <input type="text" name="lname" placeholder="About yoursel(text)"><br>
+			  <input type="text" name="lname" placeholder="What do you expect from the event?(text)"><br><br>
+			  <input type="submit" value="Submit">
+			</form>
+    	</div>
+	    </div>
+	    <script type="text/javascript">
+	    	function readURL(input) {
+	        if (input.files && input.files[0]) {
+	            var reader = new FileReader();
+
+	            reader.onload = function (e) {
+	                $('#blah')
+	                    .attr('src', e.target.result)
+	                    .width(400)
+	                    .height(250);
+	            };
+
+	            reader.readAsDataURL(input.files[0]);
+	        }
+	    }
+	    </script>
+
+	    </div>
+    <!-- </div> -->
+    </div>
+</center>
+</body>
+</html>

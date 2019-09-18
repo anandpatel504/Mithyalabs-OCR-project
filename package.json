@@ -1,0 +1,19 @@
+{
+  "name": "mithyalabs-ocr-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "anand",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.530.0",
+    "body-parser": "^1.19.0",
+    "comprehend": "^1.0.0",
+    "express": "^4.17.1",
+    "node-tesseract-ocr": "^0.1.0"
+  }
+}

@@ -1,0 +1,72 @@
+
+body{
+	background-color: pink;
+}
+.main_div{
+
+}
+
+.image_div{
+	padding:25px;
+	height: 600px;
+	margin:20px 600px 0px 600px;
+	border: 2px solid black;
+	background-color: blue;
+}
+input[type="file"]{
+	display: none;
+}
+label{
+	cursor: pointer;
+}
+#blah{
+	border: 2px solid black;
+    width:400px;
+	height: 250px;
+
+}
+.input_div{
+	border: 2px solid black;
+	padding: 14px;
+	margin: 0px 18px 0px 18px;
+	background-color: #22e058;
+}
+input[type="text"]{
+	width: 360px;
+	height: 30px;
+	border: 1px solid black;
+}
+.image_div img{
+	background-color: #22e058;
+}
+.upload_card{
+	background-color: red;
+	padding: 10px;
+	margin-left: 600px;
+	margin-right: 600px;
+	border: 2px solid black;
+}
+
+@media only screen and (max-width: 1125px) {
+	.image_div{
+	padding:25px;
+	height: 600px;
+	margin:20px 180px 0px 180px;
+}
+	.input_div{
+	padding: 14px;
+	margin: 0px 74px 0px 74px;
+}
+.upload_card{
+	background-color: red;
+	padding: 10px;
+	margin-left: 180px;
+	margin-right: 180px;
+}
+
+
+}
+
+/*input[type="text"]{
+	border: 1px solid black;
+}*/
