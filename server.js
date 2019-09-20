@@ -14,8 +14,10 @@ app.get("/ocr_data", (req, res) =>{
     psm:3
   }
   AWS.config.update({
-    accessKeyId: "AKIAJX5MFR26KWUJF65A",
-    secretAccessKey: "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",
+//     accessKeyId: "AKIAJX5MFR26KWUJF65A",
+//     secretAccessKey: "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",
+    accessKeyId: "AKIAJUN4VM3I5XZFN4DA",
+    secretAccessKey: "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",
     region: 'us-east-1'
   });
   var comprehend = new AWS.Comprehend();
